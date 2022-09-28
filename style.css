@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+div {
+    display: flex;
+    flex: 1;
+}
+
+#mainDiv {
+    justify-content: space-evenly;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
