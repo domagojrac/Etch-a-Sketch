@@ -9,10 +9,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src = "https://d3js.org/d3.v4.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="mainDiv"></div> 
+        <div class="header">Etch-a-sketch</div>
+        <div>
+            <div id="menu">
+                <div id="squareNumberSelector">
+                    <div id="sliderLabel">
+                        <label for="myRange">Number of squares</label>
+                    </div>
+                    <div>
+                        <input type="range" min="1" max="100" step="1" value="4" class="slider" id="myRange">
+                    </div>
+                </div>
+                <div id="clearSection">
+                    <button class="button-6" id="button-6" role="button">Clear</button>
+                </div>
+            </div>
+            <div id="mainDiv"></div>
+        </div>
+        <div class="footer">
+            <div id="author">Rac Design</div>
+            <div id="datePlace">Zagreb, 2022.</div>
+        </div>
     
-        <script src="script.js" async defer></script>
+        <script src="script.js" defer></script>
     </body>
 </html>
